@@ -1,0 +1,176 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<style>
+#wrapper{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+nav{
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+nav #firstUl li {
+  display: inline-block;
+  padding: 12px;
+}
+nav ul li a{
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+}
+nav #secUl li {
+  display: inline-block;
+  padding: 6px;
+}
+header{
+    display: grid;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    flex-direction: column;
+}
+#sorter{
+    display: flex;
+    justify-content: flex-end;
+    padding: none;
+}
+#sorter ul li {
+    display: inline-block;
+    padding-right: 6px;
+    font-weight: bold;
+}
+.content{
+    display: flex;
+    height: 400px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid lightgray;
+    background-color: #E3C7C7;
+    width: 100%;
+    justify-content: center;
+    margin: 5px 0 5px 0;
+}
+.detail{
+    background-color: gray;
+    height: 80%;
+    padding: 0;
+    margin: 0;
+}
+.detail img{
+    height: 320px;
+    width: 300px;
+    
+}
+.detailFooter{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: white;
+}
+footer{
+    display: flex;
+    justify-content: center;
+}
+</style>
+<body>
+    <div id="wrapper">
+        <nav>
+          <ul id="firstUl">
+            <li><a href="#">BEST</a></li><li><a href="#">NEW</a></li><li><a href="#">프리미엄</a></li><li><a href="#">오늘출발</a></li><li><a href="#">코디세트</a></li>
+          </ul>
+          <ul id="secUl">
+            <li><a href="#">회원가입</a></li><li><a href="#">로그인</a></li><li><a href="#">주문조회</a></li><li><a href="#">마이페이지</a></li>
+          </ul>
+          </ul>
+        </nav>
+    </div>
+    <header>
+        <p>BEST</p>
+    </header>
+    <div id="sorter">
+        <ul><li>인기순</li><li>신상품</li></ul>
+    </div>
+    <div class="content">
+        <div class="items">
+            <div class="detail">
+                <img src="egov/example/images/ITEM1.jpg"></img>
+            </div>
+            <div class="detailFooter">
+                <p>흰 옷</p>
+                <p>20,000 원</p>
+            </div>
+        </div>
+        <div class="items">
+            <div class="detail">
+                <img src="images/ITEM2.jpg"></img>
+            </div>
+            <div class="detailFooter">
+                <p>구명조끼</p>
+                <p>30,000 원</p>
+            </div>
+        </div>
+        <div class="items">
+            <div class="detail">
+                <img src="images/ITEM3.jpg"></img>
+            </div>
+            <div class="detailFooter">
+                <p>구명조끼</p>
+                <p>30,000 원</p>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="items">
+            <div class="detail">
+                <img src="images/ITEM1.jpg"></img>
+            </div>
+            <div class="detailFooter">
+                <p>흰 옷</p>
+                <p>20,000 원</p>
+            </div>
+        </div>
+        <div class="items">
+            <div class="detail">
+                <img src="images/ITEM2.jpg"></img>
+            </div>
+            <div class="detailFooter">
+                <p>흰 옷</p>
+                <p>20,000 원</p>
+            </div>
+        </div>
+        <div class="items">
+            <div class="detail">
+                <img src="images/ITEM3.jpg"></img>
+            </div>
+            <div class="detailFooter">
+                <p>흰 옷</p>
+                <p>20,000 원</p>
+            </div>
+        </div>
+    </div>
+    <div id="pagina" style="margin: 15px 0 15px 0; display: flex; justify-content: center;">
+        맨 앞 [1] [2] [3]
+    </div>
+    <footer>
+        <div style="border: 1px solid; background-color: gray; width: 100%; display: flex; align-content: center;flex-direction: column;flex-wrap: wrap; color: #fff; font-weight: bold;">
+            <p>B&L</p>
+            <p>최민희</p>
+            <image src="images/love.jpg" height="200px" style="justify-self: flex-end;"></image>
+        </div>
+    </footer>
+</body>
+</html>
